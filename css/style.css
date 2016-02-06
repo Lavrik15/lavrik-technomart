@@ -52,7 +52,7 @@ body,h1,h2 {
 /* main */
 .services_block {
 	width: 300px;
-	min-height: 125px;
+	min-height: 129px;
 	background-color: gray;
 	margin: 6px;
 	float: left;
@@ -126,7 +126,7 @@ body,h1,h2 {
 	float: left;
 }
 .foter_navigation {
-	width: 580px;
+	width: 540px;
 	float: right;
 }
 .cop {
@@ -197,6 +197,9 @@ body,h1,h2 {
 	width: 100%;
 	float: right;
 	background-color: #f2f6f8;
+}
+.item_box img {
+	display: block;	
 }
 /* index and catalog */
 .footer_main_navigation li, 

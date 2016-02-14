@@ -3,92 +3,115 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Техномарт</title>
+		<link rel="stylesheet" href="css/normalize.css">
 		<link href="css/style.css" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Cuprum:400,700italic,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     </head>
 	<body>
-		<header class="main_container">
-			<div class="nav_head container">
-				<div class="header_top clearfix">
-					<div class="logo_head">
-						<a href="#"><img src="img/head_logo.jpg" alt="Техномарт"></a>
-					</div>
+		<header class="main_container index">
+			<div class="header_line_1">
+				<div class="container clearfix">
+					<a href="#">
+						<img class="logo" src="img/head_logo.jpg" width="220" height="47" alt="Техномарт">
+						<img class="logo" src="img/head_logo_hover.jpg" width="220" height="47" alt="Техномарт">
+					</a>
 					<form class="search">
-						<input type="search" placeholder="Поиск:">
+						<input class="icon_search" type="search" placeholder="Поиск:">
 					</form>			
 					<ul class="users_panel">
-						<li>Закладки: 0</li>
-						<li>Корзина: 0</li>
-						<li><a href="#">оформить заказ</a></li>
+						<li><a href="#">Закладки: 0</a></li>
+						<li><a href="#">Корзина: 0</a></li>
+						<li><a class="order" href="#">Оформить заказ</a></li>
 					</ul>
-				</div>	
-				<div class="header_middle clearfix">
-					<div class="info_block">
-						<p>Интернет-магазин<br> 
-						строительных материалов<br>
-						и инструментов для ремонта</p>
+				</div>
+			</div>			
+			<div class="container clearfix">
+				<div class="info_block">
+					<p>Интернет-магазин<br> 
+					строительных материалов<br>
+					и инструментов для ремонта</p>
+				</div>
+				<div class="head_contacts">
+					<div class="head_tel">
+						<span>+7 (812) 555-05-55</span>
 					</div>
-					<div class="head_contacts">
-						<div class="head_tel">+7 (812) 555-05-55
-							<span class="head_signature">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8</span>
-						</div>
-					</div>	
-					<div class="users_block">
-						<a class="login" href="#">Войти</a>
-						<a class="reg" href="#">Регистрация</a>
-					</div>
+					<span class="head_signature">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8</span>
 				</div>	
-				<nav class="main_navigation">
-					<ul>
-						<li><a href="#">главная</a></li>
-						<li><a href="#">компания</a></li>
-						<li><a href="#">коталог</a></li>
-						<li><a href="#">новости</a></li>
-						<li><a href="#">спецпредложения</a></li>
-						<li><a href="#">доставка</a></li>
-						<li><a href="#">контакты</a></li>
-					</ul>
-				</nav>
-			</div>
+				<div class="users_block">
+					<a class="login" href="#">Войти</a>
+					<a class="reg" href="#">Регистрация</a>
+				</div>
+			</div>	
+			<nav class="main_navigation container">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Компания</a></li>
+					<li><a href="#">Коталог</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Спецпредложения</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main class="container">		
 			<div class="services clearfix">
-				<div class="services_block">
-					<span class="service_name">материалы</span>
+				<div class="services_block orange">
+					<div class="new">
+					</div>
+					<span class="service_name">Материалы</span>
 					<a href="#">на любой вкус</a>
 				</div>
-				<div class="services_block">
-					<span class="service_name">инструмены</span>
+				<div class="services_block blue">
+					<span class="service_name">Инструмент</span>
 					<a href="#">на все случаи</a>
 				</div>
-				<div class="services_block">
-					<span class="service_name">техника</span>
+				<div class="services_block purple">
+					<span class="service_name">Техника</span>
 					<a href="#">для стройки</a>
 				</div>
 				<div class="slider">
-					<h1>перфораторы</h1>
-					<span class="signature">настоящие мужские игрушки</span>
-					<input type="radio" id="btn-1" name="toggle" checked>
-					<input type="radio" id="btn-2" name="toggle">
-					<div class="slider-controls">
-						<label for="btn-1"></label>
-						<label for="btn-2"></label>
+					<div class="slider_arrow_left">
+						<button id="btn_left" class="arrow_left_button" type="button" title="назад"></button>
 					</div>
-					<div class="slider-inner">
-						<div class="slider-slides">
-							<img src="img/slide1.svg">
-							<img src="img/slide2.svg">
-						</div>                        
+					<div class="slider_arrow_right">
+						<button id="btn_right" class="arrow_right_button" type="button" title="вперед"></button>
 					</div>
-					<div class="btn btn_slider">
-						<a href="#">открыть каталог</a>
+					<input type="radio" id="btn_1" name="toggle" checked>
+					<input type="radio" id="btn_2" name="toggle">
+					<div class="slider_controls">
+						<label for="btn_1"></label>
+						<label for="btn_2"></label>
+						<label for="btn_left"></label>
+						<label for="btn_right"></label>
+						
 					</div>
+					<div class="slides">
+						<div class="slide">
+							<div class="slide_text">
+								<div class="slide-title">
+									перфораторы</div>
+								<p>Настоящие мужские игрушки</p>
+								<a class="btn" href="#">открыть каталог</a>
+							</div>
+						</div>	
+						<div class="slide">
+							<div class="slide_text">
+								<div class="slide-title">
+									Дрели</div>
+								<p>Соседям на радость!</p>
+								<a class="btn" href="#">открыть каталог</a>
+							</div>
+						</div>	
+					</div>		
 				</div>
-				<div class="services_block">
-					<span class="service_name">скидки 50%</span>
+			</div>
+				<div class="services_block green">
+					<span class="service_name">Скидки 50%</span>
 					<a href="#">на 350 товаров</a>
 				</div>
-				<div class="services_block">
-					<span class="service_name">доставка</span>
+				<div class="services_block orange_2">
+					<span class="service_name">Доставка</span>
 					<a href="#">бесплатно</a>
 				</div>
 			</div>

@@ -284,9 +284,12 @@ input::-webkit-input-placeholder {
 	margin-bottom: 15px;
 	margin-left: 24px;
 }
+.services {
+	margin-bottom: 54px;
+}
 .services_block {
 	width: 300px;
-	min-height: 129px;
+	max-height: 128px;
 	background-color: gray;
 	margin: 6px;
 	float: left;
@@ -525,11 +528,27 @@ input::-webkit-input-placeholder {
 	background-color: #f7f3ec;
 }
 .popular .btn {
-	width: 255px;
-	min-height: 40px;
+	display: inline-block;
 	float: right;
+	min-width: 140px;
+	padding: 13px 61px;
+	margin: 20px;
+	background-color: #ee3643;
+	font-size: 14px;
+	vertical-align: top;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 18px;
+	color: white;
+	border-radius: 3px;
+
 }
 .popular h1 {
+	margin: 0;
+	padding: 33px 31px;
+	text-transform: uppercase;
+	color: #32425c;
 	float: left;
 }
 .index_item {

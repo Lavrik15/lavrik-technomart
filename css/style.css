@@ -1157,7 +1157,7 @@ input::-webkit-input-placeholder {
 	left: 5px;
 	background: url(../img/icon_right.png) no-repeat 0 0;
 }
-.breadcrumbs li:first-child a {
+.breadcrumbs .not_bg::before{
 	content: '';
 	position: absolute;
 	width: 18px;

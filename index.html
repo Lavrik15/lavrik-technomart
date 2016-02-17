@@ -11,12 +11,9 @@
 		<header class="main_container index">
 			<div class="header_line_1">
 				<div class="container clearfix">
-					<a href="#">
-						<img class="logo" src="img/head_logo.jpg" width="220" height="47" alt="Техномарт">
-						<img class="logo" src="img/head_logo_hover.jpg" width="220" height="47" alt="Техномарт">
-					</a>
+					<a class="logo_head" href="#"></a>
 					<form class="search">
-						<input class="icon_search" type="search" placeholder="Поиск:">
+						<input class="icon_search main_search" type="search" placeholder="Поиск:">
 					</form>			
 					<ul class="users_panel">
 						<li><a href="#">Закладки: 0</a></li>
@@ -35,7 +32,7 @@
 					<div class="head_tel">
 						<span>+7 (812) 555-05-55</span>
 					</div>
-					<span class="head_signature">г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8</span>
+					<div class="head_signature">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
 				</div>	
 				<div class="users_block">
 					<a class="login" href="#">Войти</a>
@@ -46,7 +43,7 @@
 				<ul>
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Компания</a></li>
-					<li><a href="#">Коталог</a></li>
+					<li><a href="#">Каталог</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="#">Спецпредложения</a></li>
 					<li><a href="#">Доставка</a></li>
@@ -54,203 +51,294 @@
 				</ul>
 			</nav>
 		</header>
-		<main class="container">		
-			<div class="services clearfix">
-				<div class="services_block orange">
-					<div class="new">
+		<main>
+			<div class="container">
+				<div class="services clearfix">
+					<div class="services_block orange">
+						<div class="new">
+						</div>
+						<span class="service_name">Материалы</span>
+						<a href="#">на любой вкус</a>
 					</div>
-					<span class="service_name">Материалы</span>
-					<a href="#">на любой вкус</a>
-				</div>
-				<div class="services_block blue">
-					<span class="service_name">Инструмент</span>
-					<a href="#">на все случаи</a>
-				</div>
-				<div class="services_block purple">
-					<span class="service_name">Техника</span>
-					<a href="#">для стройки</a>
-				</div>
-				<div class="slider">
-					<div class="slider_arrow_left">
-						<button id="btn_left" class="arrow_left_button" type="button" title="назад"></button>
+					<div class="services_block blue">
+						<span class="service_name">Инструмент</span>
+						<a href="#">на все случаи</a>
 					</div>
-					<div class="slider_arrow_right">
-						<button id="btn_right" class="arrow_right_button" type="button" title="вперед"></button>
+					<div class="services_block purple">
+						<span class="service_name">Техника</span>
+						<a href="#">для стройки</a>
 					</div>
-					<input type="radio" id="btn_1" name="toggle" checked>
-					<input type="radio" id="btn_2" name="toggle">
-					<div class="slider_controls">
-						<label for="btn_1"></label>
-						<label for="btn_2"></label>
-						<label for="btn_left"></label>
-						<label for="btn_right"></label>
+					<div class="slider_wrapper">
 						
+						<div class="arrows">
+							<label class="arrow_left" for="slide1"></label>
+							<label class="arrow_right" for="slide2"></label>
+						</div>
+						<input type="radio" id="slide1" name="toggle" checked>
+						<input type="radio" id="slide2" name="toggle">
+						<div class="circles">
+							<label for="slide1"></label>
+							<label for="slide2"></label>
+						</div>
+						
+						
+						<div class="slider">
+							<div class="slides slide1">
+								<div class="slide_text">
+									<div class="slide-title">
+										перфораторы</div>
+									<p>Настроящие мужские игрушки</p>
+									<a class="btn" href="#">открыть каталог</a>
+								</div>
+							</div>	
+							<div class="slides slide2">
+								<div class="slide_text">
+									<div class="slide-title">
+										Дрели</div>
+									<p>Соседям на радость!</p>
+									<a class="btn" href="#">открыть каталог</a>
+								</div>
+							</div>	
+						</div>		
 					</div>
-					<div class="slides">
-						<div class="slide">
-							<div class="slide_text">
-								<div class="slide-title">
-									перфораторы</div>
-								<p>Настоящие мужские игрушки</p>
-								<a class="btn" href="#">открыть каталог</a>
-							</div>
+				
+					<div class="services_block green">
+						<span class="service_name">Скидки 50%</span>
+						<a href="#">на 350 товаров</a>
+					</div>
+					<div class="services_block orange_2">
+						<span class="service_name">Доставка</span>
+						<a href="#">бесплатно</a>
+					</div>
+				</div>
+				
+				
+				<div class="popular">
+					<h1>популярные товары:</h1>
+					<a class="btn" href="#">все популярные товары</a>
+				</div>
+				<div class="index_item clearfix">
+					<div class="item">
+						<div class="actions">
+							<a href="#" class="buy">Купить</a>
+							<a href="#" class="bookmark">В закладки</a>
+						</div>
+						<div class="item_image">
+							<img src="img/item_3.jpg" alt="bosh bfg 9000">
 						</div>	
-						<div class="slide">
-							<div class="slide_text">
-								<div class="slide-title">
-									Дрели</div>
-								<p>Соседям на радость!</p>
-								<a class="btn" href="#">открыть каталог</a>
-							</div>
+						<h1 class="title">Перфоратор BOSH BFG 9000</h1>
+						<div class="discount">32500 Р.</div>
+						<div class="btn_buy">25500 Р.
+						</div>
+					</div>
+					<div class="item">
+						<div class="actions">
+							<a href="#" class="buy">Купить</a>
+							<a href="#" class="bookmark">В закладки</a>
+						</div>
+						<div class="item_image">
+							<img src="img/item1.jpg" alt="bosh bfg 3000">
 						</div>	
-					</div>		
-				</div>
-			
-				<div class="services_block green">
-					<span class="service_name">Скидки 50%</span>
-					<a href="#">на 350 товаров</a>
-				</div>
-				<div class="services_block orange_2">
-					<span class="service_name">Доставка</span>
-					<a href="#">бесплатно</a>
-				</div>
-			</div>
-			<div class="popular">
-				<h1>популярные товары:</h1>
-				<a class="btn" href="#">все популярные товары</a>
-			</div>
-			<div class="index_item clearfix">
-				<div class="item">
-					<img src="img/item_3.jpg" alt="bosh bfg 9000">
-					<span>Перфоратор BOSH BFG 9000</span>
-					<span>32500 Р.</span>
-					<div class="btn_buy">25500 Р.
+						<h1 class="title">Перфоратор BOSH BFG 3000</h1>
+						<div class="discount">25500 Р.</div>
+						<div class="btn_buy">15500 Р.
+						</div>
 					</div>
-				</div>
-				<div class="item">
-					<img src="img/item1.jpg" alt="bosh bfg 3000">
-					<span>Перфоратор BOSH BFG 3000</span>
-					<span>25500 Р.</span>
-					<div class="btn_buy">15500 Р.
+					<div class="item">
+						<div class="actions">
+							<a href="#" class="buy">Купить</a>
+							<a href="#" class="bookmark">В закладки</a>
+						</div>
+						<div class="item_image">
+							<img src="img/item2.png" alt="bosh bfg 6000">
+						</div>	
+						<h1 class="title">Перфоратор BOSH BFG 6000</h1>
+						<div class="discount">30500 Р.</div>
+						<div class="btn_buy">25500 Р.
+						</div>
 					</div>
-				</div>
-				<div class="item">
-					<img src="img/item2.png" alt="bosh bfg 6000">
-					<span>Перфоратор BOSH BFG 6000</span>
-					<span>30500 Р.</span>
-					<div class="btn_buy">25500 Р.
+					<div class="item new_mark">
+						<div class="actions">
+							<a href="#" class="buy">Купить</a>
+							<a href="#" class="bookmark">В закладки</a>
+						</div>
+						<div class="item_image">
+							<img src="img/item1.jpg" alt="bosh bfg 2000">
+						</div>	
+						<h1 class="title">Перфоратор BOSH BFG 2000</h1>
+						<div class="discount"></div>
+						<div class="btn_buy">12500 Р.
+						</div>
 					</div>
-				</div>
-				<div class="item">
-					<img src="img/item1.jpg" alt="bosh bfg 2000">
-					<span>Перфоратор BOSH BFG 2000</span>
-					<div class="btn_buy">12500 Р.
-					</div>
-				</div>
-			</div>
-			<div class="popular">
-				<h1>популярные производители:</h1>
-					<a class="btn" href="#">все произовдители</a>
-			</div>
-			<div class="marks clearfix">
-				<a href="#"><img src="img/bosch.png" alt="bosh"></a>
-				<a href="#"><img src="img/Makita.png" alt="makita"></a>
-				<a href="#"><img src="img/DeWALT.png" alt="Dewalt"></a>
-				<a href="#"><img src="img/Интерскол.png" alt="интерскол"></a>
-				<a href="#"><img src="img/Hitachi.png" alt="hitachi"></a>
-				<a href="#"><img src="img/LG.png" alt="lg"></a>
-				<a href="#"><img src="img/AEG.png" alt="AEG"></a>
-				<a href="#"><img src="img/Metabo.png" alt="metabo"></a>
-			</div>
-			<div class="services_bottom clearfix">
-				<h2>сервисы</h2>
-				<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
-				Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-				<ul>
-					<li><a href="#">доставка</a></li>
-					<li><a href="#">гарантия</a></li>
-					<li><a href="#">кредит</a></li>
-				</ul>
-				<div class="delivery">
-					<h2>доставка</h2>
-					<p>Мы с удовольствием доставим ваш товар прямо 
-					к вашему подъезду совершенно бесплатно!
-					Ведь мы неплохо заработаем,
-					поднимая его на ваш этаж!</p>
 				</div>	
-				<img src="img/car.svg" alt="доставка">
-			</div>
-			<div class="about clearfix">
-				<div class="about_left">
-					<h1>компания"техномарт"</h1>
-					</p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и <br>
-					строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
-					<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-					Техномарт работает со многими транспортными компаниями: </p>
-					<ul class="about_services">
-						<li>Деловые линии</li>
-						<li>Автотрейдинг</li>
-						<li>ЖелДорЭкспедиция</li>
-					</ul>
-					<a href="#">Подробнее о компании</a>
+
+				
+				<div class="popular_manufac clearfix">
+					<h1>популярные производители:</h1>
+						<a class="btn" href="#">все произовдители</a>
 				</div>
-				<div class="about_right">
-					<h1>контакты</h1>
-					<p>Вы можете забрать товар сами,<br> 
-					заехав в наш офис:</p>
-					<img src="img/map.png"" alt="карта">
-				</div>
-				<div class="btn">
-					<a href="#">Заблудились? НапиШИТЕ НАМ!</a>
+				
+				
+				<div class="marks clearfix">
+					<a href="#">
+						<div class="marks_box">
+							<img src="img/bosch.png" alt="bosh">
+						</div>
+					</a>
+					<a href="#">
+						<div class="marks_box">		
+							<img src="img/Makita.png" alt="makita">
+						</div>
+					</a>	
+					<a href="#">		
+						<div class="marks_box">	
+							<img src="img/DeWALT.png" alt="Dewalt">
+						</div>
+					</a>	
+					<a href="#">		
+						<div class="marks_box">
+							<img src="img/Интерскол.png" alt="интерскол">
+						</div>
+					</a>	
+					<a href="#">		
+						<div class="marks_box">	
+							<img src="img/Hitachi.png" alt="hitachi">
+						</div>
+					</a>	
+					<a href="#">
+						<div class="marks_box">	
+							<img src="img/LG.png" alt="lg">
+						</div>
+					</a>	
+					<a href="#">	
+						<div class="marks_box">	
+							<img src="img/AEG.png" alt="AEG">
+						</div>
+					</a>	
+					<a href="#">	
+						<div class="marks_box">	
+							<img src="img/Metabo.png" alt="metabo">
+						</div>
+					</a>	
 				</div>
 			</div>	
-		</main>
-		<footer class="main_footer container">
-			<div class="footer_1 clearfix">
-				<div class="footer_line_1 clearfix">	
-					<div class="footer_logo">
-						<img src="img/footer_logo.png" alt="техномарт">
-					</div>
-					<ul class="footer_main_navigation">
-						<li><a href="#">Компания</a></li>
-						<li><a href="#"></a>Новости</li>
-						<li><a href="#"></a>Коталог</li>
-						<li><a href="#"></a>Доставка</li>
-						<li><a href="#"></a>Контакты</li>
+			
+			
+			<div class="services_bottom clearfix">
+				<div class="services_bottom_line container">
+					<h2>сервисы</h2>
+					<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
+					Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+					<ul>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Кредит</a></li>
 					</ul>
-				</div>
-				<div class="footer_line_2 clearfix">
-					<div class="footer_main_contacts">
-						г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-						+7 (812) 555-05-55
+					<div class="delivery">
+						<h2>доставка</h2>
+						<p>Мы с удовольствием доставим ваш товар прямо 
+						к вашему подъезду совершенно бесплатно!<br>
+						Ведь мы неплохо заработаем,<br>
+						поднимая его на ваш этаж!</p>
+					</div>	
+					<div class="delivery_car">
+						<img src="img/car.png" width="468" height="261" alt="доставка">
+					</div>	
+				</div>			
+			</div>
+			
+			
+			<div class="about clearfix">
+				<div class="container">
+					<div class="about_left">
+						<h1>компания "техномарт"</h1>
+						<p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и<br>
+						строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
+						<p>Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+						Техномарт работает со многими транспортными компаниями: </p>
+						<ul class="about_services">
+							<li>Деловые линии</li>
+							<li>Автотрейдинг</li>
+							<li>ЖелДорЭкспедиция</li>
+						</ul>
+						<a class="btn" href="#">Подробнее о компании</a>
 					</div>
-					<ul class="foter_navigation">
-						<li><a href="#">Материалы</a></li>
-						<li><a href="#"></a>Техника</li>
-						<li><a href="#"></a>Инструменты</li>
-						<li><a href="#"></a>Спецпредложения</li>
-					</ul>
+					<div class="about_right">
+						<h1>контакты</h1>
+						<p>Вы можете забрать товар сами,<br> 
+						заехав в наш офис:</p>
+						<img class="map" src="img/map.png"" alt="карта">
+					
+						<a class="btn" href="#">Заблудились? НапиШИТЕ НАМ!</a>
+					</div>
 				</div>	
-			</div>		
+			</div>
+
+			
+		</main>
+		
+		
+		
+		<footer>
+			<div class="footer_upper">
+				<div class="container clearfix">
+					<div class="contacts">
+						<a class="logo" href="/"></a>
+					</div>
+					<div class="footer_menu_up">
+						<ul class="site_menu">
+							<li><a href="#">Компания</a>
+							</li>
+							<li><a href="#">Новости</a>
+							</li>
+							<li><a href="catalog.html">Каталог</a>
+							</li>
+							<li><a href="#shipping">Доставка</a>
+							</li>
+							<li><a href="#contacts">Контакты</a>
+							</li>
+						</ul>
+					</div>	
+					<div class="footer_menu_dw">
+						<p class="address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+						+7 (812) 555-05-55</p>
+						<ul class="shop_menu">
+							<li><a href="catalog.html">Материалы</a>
+							</li>
+							<li><a href="catalog.html">Техника</a>
+							</li>
+							<li><a href="catalog.html">Инструмент</a>
+							</li>
+							<li><a href="catalog.html">Спецпредложения</a>
+							</li>
+						</ul>
+					</div>	
+				</div>
+			</div>
+
+
+			
 			<div class="footer_2 clearfix">
-				<div class="cop">
-					<p>© 2010–2016 Компания «Техномарт»<br>
-					Все права защищены</p>
-				</div>
-				<section class="footer_social">
-					<a class="social_btn social_btn_vk" href="#">Вконтакте</a>
-					<a class="social_btn social_btn_fb" href="#">Фейсбук</a>
-					<a class="social_btn social_btn_inst" href="#">Инстаграм</a>
-				</section>
-				<div class="footer_contacts">
-					<p>обратная свзяь:</p>
-					<span>mail@htmlacademy.ru</span>
-				</div>
-				<div class="footer_contacts">
-					<p>Разработано:</p>
-					<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
-				</div>
-			</div>		
+				<div class="container">
+					<div class="cop">
+						<p>© 2010–2016 Компания «Техномарт»<br>
+						Все права защищены</p>
+					</div>
+					<section class="footer_social">
+						<a class="social_btn social_btn_vk" href="#"></a>
+						<a class="social_btn social_btn_fb" href="#"></a>
+						<a class="social_btn social_btn_inst" href="#"></a>
+					</section>
+					<div class="footer_contacts_mail">
+						<p>Обратная свзяь: <a href="#">mail@htmlacademy.ru</a></p>
+					</div>
+					<div class="footer_contacts">
+						<p>Разработано - <br><a href="https://htmlacademy.ru">HTML Academy</a></p>
+					</div>
+				</div>	
+			</div>	
+
+			
 		</footer>
 	</body>
 </html>

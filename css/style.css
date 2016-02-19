@@ -690,7 +690,8 @@ input::-webkit-input-placeholder {
 .index_item {
 	float: right;
 	width: 100%;
-	margin: 20px 0;
+	margin: 0;
+    margin-bottom: 20px;
 }
 .index_item .item:nth-child(4) {
 	margin-right: 0;
@@ -939,21 +940,177 @@ input::-webkit-input-placeholder {
 	color: #293449;
 }
 
-.delivery {
-	width: 285px;
-	padding-left: 20px;
-	float: left;
-	
+.switcher{
+  display: block;
+  margin: 68px 0 0 0;
 }
-.delivery_car {
-	position: relative;
-	width: 468px;
-	float: right;
+
+.switcher input{
+  display: none;
 }
-.delivery_car img {
-	position: absolute;
-	top: -141px;
-	right: 0;
+
+ul.switcher_bar{
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  float: left;
+  width: 240px;
+
+  list-style: none;
+  margin: 0 76px 0 0;
+  padding: 0;
+}
+
+.switcher_bar:after{
+  position: absolute;
+  content: '';
+
+  width: 10px;
+  height: 272px;
+  top: -40px;
+  left: 230px;
+
+  background-image: url('../img/switcher-shadow.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+ul.switcher_bar li label{
+  display: block;
+  box-sizing: border-box;
+  height: 61px;
+
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
+  background: #32425c;
+}
+
+.switcher_bar li label:hover{
+  background: #293449;
+}
+
+.switcher_bar label{
+  box-sizing: border-box;
+  display: block;
+
+  padding: 0 0 0 22px;
+
+  font-family: Cuprum, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 61px;
+  text-decoration: none;
+  color: #fff;
+}
+
+ul.switcher_bar li.switcher_active{
+  box-sizing: border-box;
+  height: 61px;
+  background: #fff;
+  border: none;
+}
+
+.switcher_active .switcher_position{
+  color: #32425c;
+}
+
+.sw_slides{
+  position: relative;
+  display: none;
+  float: right;
+  margin-right: 0;
+  max-width: 620px;
+  min-height: 280px;
+}
+
+.sw_title{
+  margin: 0;
+  margin-bottom: 26px;
+
+  font-family: Cuprum, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.sw_text{
+  padding-right: 320px; 
+  font-family: PT Sans, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.sw_slide1{
+  background-image: url('../img/car.png');
+  background-repeat: no-repeat;
+  background-position: 100% 125%;
+}
+
+.sw_slide2{
+  background-image: url('../img/warranty.png');
+  background-repeat: no-repeat;
+  background-position: 94% -6%;
+}
+
+.sw_slide3{
+  background-image: url('../img/credit.png');
+  background-repeat: no-repeat;
+  background-position: 94% -6%;
+}
+
+
+/*Двигаем слайды*/
+#switch1:checked ~ .switcher_bar li:nth-child(1) label,
+#switch2:checked ~ .switcher_bar li:nth-child(2) label,
+#switch3:checked ~ .switcher_bar li:nth-child(3) label{
+  box-sizing: border-box;
+  height: 61px;
+  background: #fff;
+  border: none;
+  color: #32425c;
+}
+
+#switch1:checked ~ .sw_slide1,
+#switch2:checked ~ .sw_slide2,
+#switch3:checked ~ .sw_slide3{
+  display: block;
+}
+
+.company_info{
+  margin: 0 0 83px 0;
+}
+
+h2.main_title{
+  font-family: Cuprum, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000;
+
+  padding: 0;
+  margin: 86px 0 0 0;
+}
+
+ul.company_list{
+  list-style-image: url('../img/list-marker.png');
+  margin: 21px 0 34px -5px;
+}
+
+ul.company_list li{
+  font-family: Cuprum, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 20px;
+  margin-left: 0;
+  padding: 0 0 0 0;
+}
+
+ul.company_list li:first-child{
+  margin-top: 0;
 }
 .about_left {
 	width: 529px;

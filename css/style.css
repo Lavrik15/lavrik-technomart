@@ -699,10 +699,7 @@ input::-webkit-input-placeholder {
 	margin-right: 0;
 }
 .cotalog_item .item {
-	margin-bottom: 20px;
-}
-.cotalog_item {
-	margin-bottom: 32px;
+	
 }
 .item {
 	width: 217px;
@@ -716,6 +713,7 @@ input::-webkit-input-placeholder {
 	color: black;
 	line-height: 20px;
 	border: 1px solid #ccc;
+	margin-bottom: 20px;
 }
 .item:hover {
 	box-shadow: 0 0 25px 10px rgba(0,0,0,0.2);
@@ -1276,7 +1274,7 @@ p.main_text{
 .logo {
 	display: block;
 	width: 220px;
-	height: 68px;
+	height: 66px;
 	background: url(../img/footer_logo.png);
 }
 .footer_menu_up,
@@ -1793,6 +1791,7 @@ p.main_text{
 .index_content_navigation_2 {
 	width: 290px;
 	float: left;
+	margin-top: 33px;
 }
 .item_box img {
 	display: block;	
@@ -1808,17 +1807,18 @@ p.main_text{
 /* Всплывающая форма */
 
 .modul {
+	position: fixed; 
+	top: 60%; 
+	left: 68%; 
+	transform: translateX(-50%) translateY(-50%) ;
 	display: none;
-	position: absolute;
 	background: white;
-	bottom: -2077px;
-    left: 50%;
-
     margin: -141px 0 0 -310px;
 	border-top: 5px solid #ee3643;
     width: 620px;
     height: 426px;
 	box-shadow: 0 20px 40px 0 rgba(41, 52, 73, 0.75);
+	z-index: 100;
 }
 
 .modul .modul_close {
@@ -1955,12 +1955,13 @@ p.main_text{
     border-radius: 1px;
 }
 .modul_catalog {
+	position: fixed; 
+	top: 60%; 
+	left: 68%; 
+	transform: translateX(-50%) translateY(-50%) ;
 	border-top: 5px solid #ee3643;
 	display: none;
-	position: absolute;
 	background: white;
-	top: 113%;
-    left: 50%;
     margin: -141px 0 0 -310px;
     width: 620px;
     height: 278px;

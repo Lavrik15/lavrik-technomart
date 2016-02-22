@@ -667,7 +667,7 @@ input::-webkit-input-placeholder {
 .btn:active {
 	background-color: #ca2c37;
 }
-.popular h1 {
+.popular h2 {
 	font-size: 30px;
 	line-height: 30px;
 	margin: 0;

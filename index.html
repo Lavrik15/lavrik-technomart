@@ -288,8 +288,9 @@
 						<h2>контакты</h2>
 						<p>Вы можете забрать товар сами,<br> 
 						заехав в наш офис:</p>
-						<img class="map" src="img/map.png" width="300" height="158" alt="карта">
-					
+						<a href="#" class="js_open_map">
+							<img class="map" src="img/map.png" width="300" height="158" alt="карта">
+						</a>
 						<a class="btn btn_popup" href="#">Заблудились? НапиШИТЕ НАМ!</a>
 					</div>
 				</div>	
@@ -365,33 +366,45 @@
 		
 		<div class="modul">
 			<button class="modul_close" type="button" title="Закрыть">Закрыть</button>
-			<form class="modul_content">
-			<div class="modul_name">
-				<label for="name">Ваше имя:</label><input id="name" type="text" placeholder="Представьтесь, пожалуйста">
-			</div>
-			<div class="modul_email">	
-				<label for="mail">Ваш e-mail:</label><input id="mail" type="email" placeholder="Для отправки ответа">
-			</div>
-			<div class="modul_text">		
-				<label for="text">Текст письма:</label><textarea id="text" rows="10" cols="45" name="text" placeholder="В свободной форме"></textarea>
-			</div>	
-			</form>
-			<div class="modul_btn">
-				<input type="submit" value="отправить">
-			</div>	
+			<form>
+				<div class="modul_content">
+					<div class="modul_name">
+						<label for="name">Ваше имя:</label><input id="name" name="yourname" type="text" placeholder="Представьтесь, пожалуйста">
+					</div>
+					<div class="modul_email">	
+						<label for="mail">Ваш e-mail:</label><input id="mail" name="email" type="email" placeholder="Для отправки ответа">
+					</div>
+					<div class="modul_text">		
+						<label for="text">Текст письма:</label><textarea id="text" rows="10" cols="45" name="text" placeholder="В свободной форме"></textarea>
+					</div>	
+				</div>
+				<div class="modul_btn">
+					<input type="submit" value="отправить">
+				</div>
+			</form>	
 		</div>
 		<script> 
 			var link = document.querySelector(".btn_popup"); 
 			var popup = document.querySelector(".modul");
 			var close = popup.querySelector(".modul_close");
+			var yourname = popup.querySelector("[name=yourname]");
+			var form = popup.querySelector("form");
+			var email = popup.querySelector("[name=email]");
 			
 			link.addEventListener("click", function(event) {
 			event.preventDefault();
 			popup.classList.add("modul_close_show");
+			login.focus();
 			});
 			close.addEventListener("click", function(event){
 			event.preventDefault();
 			popup.classList.remove("modul_close_show");
+			});
+			form.addEventListener("submit", function(event){
+			if (!yourname.value || !email.value){
+			event.preventDefault();
+			console.log("Нужно ввести логин и пароль");
+			} 
 			});
 		</script>
 	</body>

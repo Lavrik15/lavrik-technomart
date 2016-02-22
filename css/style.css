@@ -1810,9 +1810,8 @@ p.main_text{
 
 .modul {
 	position: fixed; 
-	top: 60%; 
-	left: 68%; 
-	transform: translateX(-50%) translateY(-50%) ;
+	top: 30%; 
+	left: 50%; 
 	display: none;
 	background: white;
     margin: -141px 0 0 -310px;
@@ -1972,6 +1971,7 @@ p.main_text{
 }
 .modul_close_show {
 	display: block;
+	animation: bounce 0.6s;
 }
 .modul_catalog h2 {
 	font-size: 30px;
@@ -2024,5 +2024,20 @@ p.main_text{
 }
 .modul_cotalog_btn input[type="submit"]:last-child:hover {
 	color: gray;
+}
+
+@keyframes bounce {
+  0%   {
+    transform: translateY(-2000px);
+  }
+  70%  {
+    transform: translateY(30px);
+  }
+  90%  {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 /* map */
